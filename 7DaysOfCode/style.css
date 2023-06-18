@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --fonte-principal: 'Inter', sans-serif;
+    --cinza-escuro: #3A404E;
+    --cor-menu: #667085;
+    --cor-fundo: #FFFFFF;
+    --cor-borda-cadastrar:#8E2424;
+    --cor-cadastrar: rgba(16, 24, 40, 0.05);
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    
+}
+.menu{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5.6em;
+    align-items: flex-start;
+}
+
+.menu__logo{
+    width: 1.5em;
+    height: 1.5em;
+    padding: 1.656em 70em 0 5em;
+    
+    
+}
+.opcoes{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+.menu__nome__empresa{
+    color: var(--cinza-escuro);
+    font-weight: 500;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0 14em 1.75em 4.5em;
+}
+
+
+.menu__opcoes{
+    margin-right: 0.6em;
+}
+.menu__opcoes__item{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.5em;
+    color:var(--cor-menu);
+    
+}
+.menu__cadastrar{
+    border: 4px solid var(--cor-borda-cadastrar);
+    background: var(--cor-borda-cadastrar);
+    text-decoration: none;
+    color: var(--cor-fundo);
+    box-shadow: 0 0.1em 0.2em var(--cor-cadastrar);
+    border-radius: 0.5em;
+    padding: 0.7em 1.2em;
+    gap: 0.5em;
+    box-sizing: border-box;
+    
+
+}
+.opcoes__lateral{
+    
+    display: flex;
+    padding: 0 1.8em 1.75em 15em;
+}
+.opcoes__lateral .menu__opcoes__item{
+    padding-right: 1.8em;
+}
+
+
