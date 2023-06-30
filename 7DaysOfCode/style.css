@@ -3,79 +3,300 @@
 :root{
     --fonte-principal: 'Inter', sans-serif;
     --cinza-escuro: #3A404E;
-    --cor-menu: #667085;
+    --cinza-claro: #667085;
     --cor-fundo: #FFFFFF;
-    --cor-borda-cadastrar:#8E2424;
+    --cor-destaque:#8E2424;
     --cor-cadastrar: rgba(16, 24, 40, 0.05);
+    --cor-titulo:#101828;
+    --cor-vagas-abertas:rgba(142, 36, 36, 0.05);
+    --cor-borda-proposta:#EAECF0;
+    --cor-fundo-depoimentos:rgba(195, 25, 25, 0.03);
+    --cor-fundo-formulario:#98A2B3;
 }
 
 body{
     background-color: var(--cor-fundo);
     font-family: var(--fonte-principal);
+    font-weight: 500;
     
 }
 .menu{
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 5.6em;
-    align-items: flex-start;
+    text-align: center;
+    display: flex;
 }
-
 .menu__logo{
-    width: 1.5em;
-    height: 1.5em;
-    padding: 1.656em 70em 0 5em;
-    
-    
+    padding: 2em 0 7.5em 8em;
 }
 .opcoes{
-    display:flex;
-    list-style: none;
-    align-items: center;
-    height: 100%;
-    margin: 0;
+    display: flex;
+    list-style-type: none; 
+    padding-left: 5em;
 }
-.menu__nome__empresa{
-    color: var(--cinza-escuro);
-    font-weight: 500;
-    width: 1.5em;
-    height: 1.5em;
-    padding: 0 14em 1.75em 4.5em;
-}
-
 
 .menu__opcoes{
-    margin-right: 0.6em;
-}
-.menu__opcoes__item{
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1em;
-    line-height: 1.5em;
-    color:var(--cor-menu);
+    padding-top: 1.3em;
     
 }
-.menu__cadastrar{
-    border: 4px solid var(--cor-borda-cadastrar);
-    background: var(--cor-borda-cadastrar);
+.menu__opcoes__item{
+    padding-right: 1.8em;
+    text-decoration: none;
+    color:var(--cinza-claro);
+    
+}
+
+.opcoes__lateral{
+    padding-left: 20em;
+    display: flex;
+    
+}
+
+
+.cadastrar {
+    border: 4px solid var(--cor-destaque);
+    background: var(--cor-destaque);
     text-decoration: none;
     color: var(--cor-fundo);
-    box-shadow: 0 0.1em 0.2em var(--cor-cadastrar);
+    box-shadow: 0 0.1em 0.2em var(--cor-destaque);
     border-radius: 0.5em;
+    padding: 0.6em 1.2em;
+    gap: 0.5em;
+    box-sizing: border-box;
+    height: 2.75em;
+   
+
+}
+
+
+.container{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    background-color: var(--cor-fundo);
+   
+
+}
+
+.sobre__nos{
+    color:var(--cor-destaque);
+    font-size: 1em;
+}
+
+.container__titulo{
+   font-size: 2.5em;
+   color: var(--cor-titulo);
+}
+
+.container__paragrafo{
+    font-weight: 400;
+    font-size: 1.2em;
+    align-items: center;
+    color: var(--cinza-claro);
+    padding: 0 18% 0;
+}
+
+.metrica{
+    align-items: center;
+    padding: 5em 0;
+}
+
+.metrica__item{
+    display: flex;
+    padding: 0 4em;
+}
+
+.metrica__numero{
+    color: var(--cor-destaque);
+    font-size: 3.8em;
+    font-weight: 600;
+    
+}
+
+.metrica__item1{
+    padding-right: 2.5em;
+}
+
+.metrica__item2 {
+     padding: 0 3em;
+}
+
+.metrica__item4{
+    padding-left: 2.5em;
+}
+
+.metrica__titulos{
+    font-size: 1.2em;
+    color: var(--cor-titulo);
+}
+
+.vagas{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    background-color: var(--cor-fundo);
+}
+
+.vagas__abertas{
+    color: var(--cor-destaque);
+    font-size: 0.8em;
+    background: var(--cor-vagas-abertas);
+    box-shadow: 0 0.1em 0.2em var(--cor-vagas-abertas);
+    border-radius: 1em;
     padding: 0.7em 1.2em;
     gap: 0.5em;
     box-sizing: border-box;
-    
 
 }
-.opcoes__lateral{
+
+.vagas__titulo{
+    color: var(--cor-titulo);
+    font-weight: 600;
+    font-size: 2.3em;
+}
+
+.vagas__paragrafo{
+    color: var(--cinza-claro);
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.vagas__imagem{
+    width: 60em;
+    height: 20em;
+    top: 18.7em;
+    left: 6em;
+}
+
+.vagas__disponiveis{
+    text-align: center;
     
+    
+    
+}
+
+.vagas__disponiveis__titulos2{
+    position: relative;
+    padding-left: 11em;
+}
+
+.vagas__disponiveis__container{
+    padding: 0.5em 29.5em 1.5em 2.5em;
+}
+
+.vagas__disponivel__titulos{
+    color: var(--cor-titulo);
+    font-size: 1.3em;
+    
+  
+}
+
+.vagas__disponiveis__container__propostas{
+    border: 1px solid var(--cor-borda-proposta);
+    padding: 1.5em 1.5em 1.8em 1.5em;
+    border-radius: 1em;
+    margin: 2em 0 2em 23.5em;
+    text-align: left;
+    width: 38em;
+}
+
+.vagas__disponivel__paragrafos{
+    font-size: 1.2em;
+    color: var(--cor-titulo);
+    padding: 2em 2em 1.5em 0.3em;
+   
+}
+
+
+.vagas__disponivel__descricao{
+    color: var(--cinza-claro);
+    font-size: 1em;
+    padding: 2em 2em 1.5em 0.1em;
+    
+    
+}
+
+.vagas__disponiveis__descricao__espacamento{
+    padding-right: 1.5em;
+}
+
+.depoimentos{
+    text-align: center;
+    padding: 1.5em 6em;
+    background: var(--cor-fundo-depoimentos);
+    box-shadow: 0 0.1em 0.2em var(--cor-fundo-depoimentos);
+    border-radius: 1em;
+    gap: 0.5em;
+    box-sizing: border-box;
+    margin: 0 5em;
+}
+
+.depoimentos__colaboradores{
+    color: var(--cor-destaque);
+    font-weight: 600;
+    font-size: 0.8em;
+
+}
+
+.depoimentos__auxílio{
+    font-size: 2.3em;
+    color: var(--cor-titulo);
+}
+
+.depoimentos__avatar{
+    border-radius: 12.5em;
+}
+
+.depoimentos__pessoa{
+    font-size: 1em;
+    color: var(--cor-titulo);
+}
+
+.area-de-atuacao{
+    color: var(--cinza-claro);
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.formulario{
+    text-align: center;
+    font-weight: 400;
+    color: var(--cinza-claro);
+    font-size: 1em;
+}
+
+.formulario__titulo{
+    color: var(--cor-titulo);
+    font-weight: 600;
+    font-size: 2.25em;
+
+}
+.formulario__paragrafo{
+    font-size: 1.25em;
+}
+
+.formulario__email__cadastrar{
     display: flex;
-    padding: 0 1.8em 1.75em 15em;
-}
-.opcoes__lateral .menu__opcoes__item{
-    padding-right: 1.8em;
+    padding: 1em 0 2em 27em;
+    
+    
 }
 
+.formulario__informacoes{
+    color: var(--cor-fundo-formulario);
+}
 
+.formulario__email{
+    border: 1px solid var(--cinza-claro);
+    color: var(--branco);
+    border-radius: 1.5em;
+    padding: 1em;
+    width: 24em;
+    height: 3.5em;
+    margin-right: 3em;
+    margin-top: 1em;
+}
